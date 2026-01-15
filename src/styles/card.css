@@ -1,0 +1,77 @@
+/* PC Card 3D Effect */
+.pc-card-wrapper {
+    perspective: 500px;
+    transform: translateZ(0.1px);
+    position: relative;
+    touch-action: none;
+}
+
+.pc-card {
+    height: 60vh;
+    max-height: 540px;
+    display: grid;
+    aspect-ratio: 0.718;
+    border-radius: 30px;
+    position: relative;
+    background-blend-mode: overlay, normal, normal, normal;
+    /* animation: glow-bg 12s linear infinite; */
+    box-shadow: 0 0 20px -5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+    transform-style: preserve-3d;
+    background: #0a0a0a;
+    overflow: hidden;
+}
+
+/* Mouse hover 3D rotation logic will be handled by JS setting vars or directly styles */
+/* For now, simplified generic 3D CSS */
+
+.pc-inside {
+    grid-area: 1 / -1;
+    border-radius: 30px;
+    background-image: var(--inner-gradient);
+    background-color: rgba(0, 0, 0, 0.95);
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+.pc-avatar-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.avatar {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.pc-user-info {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.pc-user-details {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.pc-mini-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+}
