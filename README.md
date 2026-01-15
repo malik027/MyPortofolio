@@ -109,16 +109,6 @@ portfolio/
 
 ---
 
-## 📊 GitHub Stats
-
-<div align="center">
-
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=malik027&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=00D9FF&icon_color=00D9FF)
-
-</div>
-
----
-
 ## 📜 License
 
 This project is open source and available under the [MIT License](LICENSE).
