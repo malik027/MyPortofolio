@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://my-portofolio-rust.vercel.app/sitemap.xml
+Sitemap: https://malik-portofolio.vercel.app/sitemap.xml
 
 # Crawl-delay (optional, some bots respect this)
 Crawl-delay: 1
